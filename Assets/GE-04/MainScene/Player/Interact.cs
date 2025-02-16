@@ -31,7 +31,8 @@ public class Interact : MonoBehaviour
         if(saved != null)
         {
             BeInteracted beInteracted = saved.GetComponent<BeInteracted>();
-            beInteracted.DoInteract();
+            beInteracted.SetPlayer(this.gameObject); //ƒvƒŒƒCƒ„[‚Ìî•ñ‚ğ“`‚¦‚é
+            beInteracted.DoInteract(); //
         }
     }
 }

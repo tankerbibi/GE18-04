@@ -6,12 +6,16 @@ public class DentiCtrl : MonoBehaviour
     private Rigidbody rb;
     private float move = 0.0f;
     private float posNeg = 0.0f;
+    private InputCtrl inputCtrl;
+    private PlayerInput playerInput;
+    private GameObject g;
     [SerializeField] private float rotationSpeed = 5.0f;
     [SerializeField] private float movementSpeed = 5.0f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerInput = GetComponent<PlayerInput>();
     }
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -25,7 +29,10 @@ public class DentiCtrl : MonoBehaviour
     }
     private void Update()
     {
-        rb.linearVelocity = transform.rotation * new Vector3(0, rb.linearVelocity.y, move);
-        transform.Rotate(0.0f, posNeg * Time.deltaTime, 0.0f);
+        if (playerInput.inputIsActive)
+        {
+            rb.linearVelocity = transform.rotation * new Vector3(0, rb.linearVelocity.y, move);
+            transform.Rotate(0.0f, posNeg * Time.deltaTime, 0.0f);
+        }
     }
 }

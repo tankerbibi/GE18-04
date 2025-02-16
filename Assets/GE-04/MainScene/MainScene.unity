@@ -8056,6 +8056,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1600512233610685826, guid: 3d3e255e2157f3842bad6e94c979bd32, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600512233610685826, guid: 3d3e255e2157f3842bad6e94c979bd32, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600512233610685826, guid: 3d3e255e2157f3842bad6e94c979bd32, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: fe311860-8f3a-4c73-80fa-5512bb41f364
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600512233610685826, guid: 3d3e255e2157f3842bad6e94c979bd32, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: 'Player/Flip[/Keyboard/q]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2028258609635279504, guid: 3d3e255e2157f3842bad6e94c979bd32, type: 3}
       propertyPath: m_Name
       value: Player
