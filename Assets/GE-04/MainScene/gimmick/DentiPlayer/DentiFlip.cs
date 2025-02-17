@@ -16,7 +16,7 @@ public class DentiFlip : MonoBehaviour
     {
         initRotation = transform.localRotation;
         targetRotation = Quaternion.Euler(Rotate) * initRotation;
-        playerInput = GetComponent<PlayerInput>();
+        playerInput = GetComponentInParent<PlayerInput>();
     }
     private void Update()
     {

@@ -990,7 +990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7224384392381210869}
   m_Layer: 0
-  m_Name: StudioLight_2
+  m_Name: Model_StudioLight2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

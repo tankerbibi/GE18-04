@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4416703153803227542}
   m_Layer: 0
-  m_Name: SocketMachine
+  m_Name: Model_Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
