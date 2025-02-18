@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,30 +7,41 @@ public class Interact : MonoBehaviour
     [SerializeField] private GameObject EUI = null;
     private Collider saved = null;
     private BeInteracted beInteracted = null;
+    private PlayerInput playerInput;
     private void Start()
     {
-        EUI.SetActive(false);
+        playerInput = GetComponent<PlayerInput>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered");
-        if (other.GetComponent<BeInteracted>())
+        if (playerInput.inputIsActive)
         {
-            
-            saved = other;
-            EUI.SetActive(true);
-            beInteracted = other.GetComponent<BeInteracted>();
+            if (other.GetComponent<BeInteracted>())
+            {
+                Debug.Log("IsTriggered");
+                saved = other;
+                EUI.SetActive(true);
+                beInteracted = other.GetComponent<BeInteracted>();
+            }
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        if (other == saved)
+        if (playerInput.inputIsActive)
         {
-            EUI.SetActive(false);
-            saved = null;
-            beInteracted = null;
-
+            if (other == saved)
+            {
+                Debug.Log("Isexit");
+                EUI.SetActive(false);
+                saved = null;
+                beInteracted = null;
+            }
         }
+    }
+
+    private void Update()
+    {
     }
     public void OnInteract(InputAction.CallbackContext context)
     {
@@ -37,6 +49,7 @@ public class Interact : MonoBehaviour
         {
             beInteracted.SetPlayer(this.gameObject); //ÉvÉåÉCÉÑÅ[ÇÃèÓïÒÇì`Ç¶ÇÈ
             beInteracted.DoInteract(); //
+            EUI.SetActive(false);
         }
     }
 }

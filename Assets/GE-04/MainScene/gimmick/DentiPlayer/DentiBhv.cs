@@ -27,8 +27,7 @@ public class DentiBhv : MonoBehaviour //電池ﾌﾟﾚｲﾔｰ⇔魂プレイヤー
     }
     private void SetCamera()
     {
-        transform.Find("Camera").gameObject.SetActive(true); //カメラを変更
         tamasiiPlayer.transform.Find("Camera").gameObject.SetActive(false);
-        
+        transform.Find("Camera").gameObject.SetActive(true); //カメラを変更
     }
 }
