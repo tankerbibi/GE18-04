@@ -12,17 +12,17 @@ public class InputCtrl : MonoBehaviour
 
         if(inputLocked == true)
         {
-            UnlockInput();
+            LockInput();
         }
     }
     public void UnlockInput()
     {
         inputLocked = false;
-        playerInput.DeactivateInput();
+        playerInput.ActivateInput();
     }
     public void LockInput()
     {
         inputLocked = true;
-        playerInput.ActivateInput();
+        playerInput.DeactivateInput();
     }
 }

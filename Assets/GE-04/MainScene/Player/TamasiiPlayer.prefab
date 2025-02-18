@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6354884540772854452}
   - component: {fileID: 3498096311123583222}
   m_Layer: 0
-  m_Name: Player
+  m_Name: TamasiiPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,6 +37,7 @@ Transform:
   m_Children:
   - {fileID: 6539318083457582879}
   - {fileID: 7959915251793714977}
+  - {fileID: 7171518299649382163}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &451024663340563493
@@ -473,6 +474,37 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &6270546779190919068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7171518299649382163}
+  m_Layer: 0
+  m_Name: InitTransformObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7171518299649382163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270546779190919068}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7586664515303825375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8081998192806100307
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a155a6cadab41e446b4a846eeebf4e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initTransform: {fileID: 7171518299649382163}
   upDownSpeed: 5
   moveWidth: 0.2
   followRate: 2

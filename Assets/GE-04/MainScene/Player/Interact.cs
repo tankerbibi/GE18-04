@@ -5,16 +5,20 @@ public class Interact : MonoBehaviour
 {
     [SerializeField] private GameObject EUI = null;
     private Collider saved = null;
+    private BeInteracted beInteracted = null;
     private void Start()
     {
         EUI.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "gimmick")
+        Debug.Log("Triggered");
+        if (other.GetComponent<BeInteracted>())
         {
-            EUI.SetActive(true);
+            
             saved = other;
+            EUI.SetActive(true);
+            beInteracted = other.GetComponent<BeInteracted>();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -23,6 +27,7 @@ public class Interact : MonoBehaviour
         {
             EUI.SetActive(false);
             saved = null;
+            beInteracted = null;
 
         }
     }
@@ -30,7 +35,6 @@ public class Interact : MonoBehaviour
     {
         if(saved != null)
         {
-            BeInteracted beInteracted = saved.GetComponent<BeInteracted>();
             beInteracted.SetPlayer(this.gameObject); //ƒvƒŒƒCƒ„[‚Ìî•ñ‚ğ“`‚¦‚é
             beInteracted.DoInteract(); //
         }

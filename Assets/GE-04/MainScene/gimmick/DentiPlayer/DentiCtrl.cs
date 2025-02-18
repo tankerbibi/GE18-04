@@ -8,10 +8,9 @@ public class DentiCtrl : MonoBehaviour
     private float posNeg = 0.0f;
     private InputCtrl inputCtrl;
     private PlayerInput playerInput;
-    private GameObject g;
-    [SerializeField] private float rotationSpeed = 5.0f;
-    [SerializeField] private float movementSpeed = 5.0f;
 
+    [SerializeField] private float rotationSpeed = 45.0f;
+    [SerializeField] private float movementSpeed = 20.0f;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
