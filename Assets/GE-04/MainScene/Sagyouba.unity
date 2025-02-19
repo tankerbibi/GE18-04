@@ -9338,13 +9338,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 306558930679588524, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+      propertyPath: inputLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 822922859292398588, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14
+      value: -13.99
       objectReference: {fileID: 0}
     - target: {fileID: 822922859292398588, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 822922859292398588, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: m_LocalPosition.z
