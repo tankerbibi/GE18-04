@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class DentiBhv : MonoBehaviour //電池ﾌﾟﾚｲﾔｰ⇔魂プレイヤー
 {
-    [SerializeField]private BeInteracted beInteracted;
+    [SerializeField] private GameObject dentiUI;
+    [SerializeField] private BeInteracted beInteracted;
     [SerializeField] private float setCameraDelay = 0.7f;
     private InputCtrl inputCtrl;
     private GameObject tamasiiPlayer = null;
@@ -46,5 +47,6 @@ public class DentiBhv : MonoBehaviour //電池ﾌﾟﾚｲﾔｰ⇔魂プレイヤー
 
         Invoke("ResetCamera", setCameraDelay);
 
+        dentiUI.SetActive(false);
     }
 }

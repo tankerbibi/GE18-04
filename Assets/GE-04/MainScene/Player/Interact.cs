@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class Interact : MonoBehaviour
 {
     [SerializeField] private GameObject EUI = null;
-    [SerializeField] private GameObject FUI = null;
+    [SerializeField] private GameObject dentiUI = null;
     private Collider saved = null;
     private BeInteracted beInteracted = null;
     private CtrlFinalButton ctrlFinalButton = null;
@@ -20,6 +20,7 @@ public class Interact : MonoBehaviour
         {
             if (other.GetComponent<BeInteracted>())
             {
+                Debug.Log("Triggered");
                 saved = other;
                 EUI.SetActive(true);
                 beInteracted = other.GetComponent<BeInteracted>();
@@ -27,7 +28,6 @@ public class Interact : MonoBehaviour
             else if(other.GetComponent<CtrlFinalButton>())
             {
                 saved = other;
-                FUI.SetActive(true);
                 ctrlFinalButton = other.GetComponent<CtrlFinalButton>();
             }
         }
@@ -48,16 +48,11 @@ public class Interact : MonoBehaviour
 
                 if(ctrlFinalButton != null)
                 {
-                    FUI.SetActive(false);
                     saved = null;
                     ctrlFinalButton = null;
                 }
             }
         }
-    }
-
-    private void Update()
-    {
     }
     public void OnInteract(InputAction.CallbackContext context)
     {
@@ -66,6 +61,7 @@ public class Interact : MonoBehaviour
             beInteracted.SetPlayer(this.gameObject); //ÉvÉåÉCÉÑÅ[ÇÃèÓïÒÇì`Ç¶ÇÈ
             beInteracted.DoInteract(); //
             EUI.SetActive(false);
+            dentiUI.SetActive(true);
             saved = null;
             ctrlFinalButton = null;
             beInteracted = null;
@@ -76,7 +72,6 @@ public class Interact : MonoBehaviour
         if (ctrlFinalButton != null)
         {
             EUI.SetActive(false);
-            FUI.SetActive(false);
             saved = null;
             ctrlFinalButton.ActivateFinalButton();
         }

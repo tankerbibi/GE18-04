@@ -187,7 +187,19 @@ MonoBehaviour:
     m_ActionId: fe311860-8f3a-4c73-80fa-5512bb41f364
     m_ActionName: 'Player/Flip[/Keyboard/q]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6354884540772854452}
+        m_TargetAssemblyTypeName: Interact, Assembly-CSharp
+        m_MethodName: OnCompleteF
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 50c853d5-2e47-4771-be3c-3d1bc5f662b0
     m_ActionName: 'Player/CompleteF[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -208,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EUI: {fileID: 0}
-  FUI: {fileID: 0}
+  dentiUI: {fileID: 0}
 --- !u!114 &3498096311123583222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +534,6 @@ GameObject:
   - component: {fileID: 7959915251793714977}
   - component: {fileID: 4126877029103503956}
   - component: {fileID: 2533752743554181153}
-  - component: {fileID: 3531248311400071807}
   - component: {fileID: 7129115881191883239}
   m_Layer: 6
   m_Name: Tamasii
@@ -600,27 +611,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3531248311400071807
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8081998192806100307}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7129115881191883239
 MonoBehaviour:
   m_ObjectHideFlags: 0

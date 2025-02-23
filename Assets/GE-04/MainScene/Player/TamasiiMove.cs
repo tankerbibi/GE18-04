@@ -25,13 +25,15 @@ public class TamasiiMove : MonoBehaviour
         if(followTransform == null) //ÉtÉHÉçÅ[ëŒè€Ç™ë∂ç›ÇµÇ»Ç¢Ç∆Ç´
         {
             transform.position = Vector3.MoveTowards(transform.position, initTransform.position, followRate * Time.deltaTime);
+            transform.localPosition = new Vector3(transform.localPosition.x, initTransform.localPosition.y + sin, transform.localPosition.z);
         }
         else
         {
             transform.position = Vector3.MoveTowards(transform.position, followTransform.position, followRate * Time.deltaTime);
+            //transform.localPosition = new Vector3(transform.localPosition.x, initTransform.localPosition.y + sin, transform.localPosition.z);
         }
 
-        transform.localPosition = new Vector3(transform.localPosition.x, initLocalPos.y + sin, transform.localPosition.z);
+        
     }
     public void SetFollowTransform(Transform transform)
     {
