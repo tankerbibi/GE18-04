@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 8148080274926095141}
   - component: {fileID: 5155975812567238998}
   - component: {fileID: 8480767008222797401}
+  - component: {fileID: 440693410622768228}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -871,6 +872,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &440693410622768228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959464518845735096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe2d00c0ade0e2428f430ad883b189a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3407436602527309023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,9 +892,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2198043188191968093}
     m_Modifications:
+    - target: {fileID: -875090579900144894, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
+      propertyPath: setMaterialScript1
+      value: 
+      objectReference: {fileID: 440693410622768228}
     - target: {fileID: 2372953618528522123, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
       propertyPath: m_Name
       value: Model_Plus (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793159144145133184, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
+      propertyPath: m_Center.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7827731863569468222, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
       propertyPath: m_LocalScale.x

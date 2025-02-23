@@ -8,10 +8,12 @@ public class PlayerCtrl : MonoBehaviour
     private float posNeg = 0.0f;
     [SerializeField] private float rotationSpeed = 5.0f;
     [SerializeField] private float movementSpeed = 5.0f;
+    [SerializeField] private PlayerInput playerinput;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerinput = GetComponent<PlayerInput>();
     }
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -25,8 +27,12 @@ public class PlayerCtrl : MonoBehaviour
     }
     private void Update()
     {
-        rb.linearVelocity = transform.rotation * new Vector3(0, rb.linearVelocity.y, move);
-        transform.Rotate(0.0f, posNeg * Time.deltaTime, 0.0f);
+        if(playerinput.inputIsActive)
+        {
+            rb.linearVelocity = transform.rotation * new Vector3(0, rb.linearVelocity.y, move);
+            transform.Rotate(0.0f, posNeg * Time.deltaTime, 0.0f);
+        }
+        
     }
 }
 

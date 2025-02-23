@@ -1460,6 +1460,7 @@ GameObject:
   - component: {fileID: 5292091713814925895}
   - component: {fileID: 5437164053552186575}
   - component: {fileID: 9113368467666447860}
+  - component: {fileID: 7463383464739114558}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -1798,6 +1799,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &7463383464739114558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124701835790198434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe2d00c0ade0e2428f430ad883b189a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6724612939640461943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1806,6 +1819,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6247641591016634491}
     m_Modifications:
+    - target: {fileID: -875090579900144894, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
+      propertyPath: setMaterialScript1
+      value: 
+      objectReference: {fileID: 7463383464739114558}
     - target: {fileID: 2372953618528522123, guid: f4cf5aa36951119418043d97d7e2f943, type: 3}
       propertyPath: m_Name
       value: Model_Plus

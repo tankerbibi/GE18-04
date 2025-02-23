@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1600512233610685826}
   - component: {fileID: 6354884540772854452}
   - component: {fileID: 3498096311123583222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TamasiiPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 45
   movementSpeed: 20
+  playerinput: {fileID: 0}
 --- !u!114 &1600512233610685826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +186,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: fe311860-8f3a-4c73-80fa-5512bb41f364
     m_ActionName: 'Player/Flip[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 50c853d5-2e47-4771-be3c-3d1bc5f662b0
+    m_ActionName: 'Player/CompleteF[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -203,6 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EUI: {fileID: 0}
+  FUI: {fileID: 0}
 --- !u!114 &3498096311123583222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +233,7 @@ GameObject:
   - component: {fileID: 6922253170875875659}
   - component: {fileID: 8355506863608966018}
   - component: {fileID: 2432408077484109226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,8 +355,8 @@ GameObject:
   - component: {fileID: 2069719958870169627}
   - component: {fileID: 7854036687466604990}
   - component: {fileID: 651128945997269606}
-  m_Layer: 0
-  m_Name: Camera
+  m_Layer: 6
+  m_Name: TamasiiPlayerCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7171518299649382163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InitTransformObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +524,7 @@ GameObject:
   - component: {fileID: 2533752743554181153}
   - component: {fileID: 3531248311400071807}
   - component: {fileID: 7129115881191883239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tamasii
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +578,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cbb7c4b19d016b44b4511790cfdf479, type: 2}
+  - {fileID: 2100000, guid: 2d669a5e6c72c314ead1400519accc39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -630,4 +636,4 @@ MonoBehaviour:
   initTransform: {fileID: 7171518299649382163}
   upDownSpeed: 5
   moveWidth: 0.2
-  followRate: 2
+  followRate: 8

@@ -509,9 +509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1865b84f40f865341b957c9124e2fc8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctM: {fileID: 0}
-  setMaterial1: {fileID: 0}
-  setMaterial2: {fileID: 0}
+  OnMaterial: {fileID: 2100000, guid: 476b83763681d28448e230f9c0ad907c, type: 2}
+  setMaterialScript1: {fileID: 8808175889431125303}
+  setMaterialScript2: {fileID: 0}
 --- !u!1 &7253250911905679303
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 8092050826463747566}
   - component: {fileID: 6947019320549726758}
   - component: {fileID: 8365310092364531252}
+  - component: {fileID: 8808175889431125303}
   m_Layer: 0
   m_Name: Pipe
   m_TagString: Untagged
@@ -2486,3 +2487,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &8808175889431125303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253250911905679303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe2d00c0ade0e2428f430ad883b189a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

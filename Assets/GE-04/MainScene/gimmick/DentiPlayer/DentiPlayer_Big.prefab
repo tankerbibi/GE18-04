@@ -8,6 +8,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8622169877646948013}
     m_Modifications:
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320909976145456480}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayDentiBhv
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DentiBhv, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2289946265444646441, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,6 +85,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+--- !u!114 &745881482600342067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7985374031919838899, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+  m_PrefabInstance: {fileID: 7244136886595916928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a476c43ff814cf4bbd22caa7ad46c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8242813773534237612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1651698918967084844, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
+  m_PrefabInstance: {fileID: 7244136886595916928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da620af9278d5a5459907e3adf51b781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8885564547983076009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2289946265444646441, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
@@ -110,18 +160,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 952812128643235554, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3145294687696114653, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 745881482600342067}
+    - target: {fileID: 3145294687696114653, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFlip
       objectReference: {fileID: 0}
     - target: {fileID: 6235160554946844520, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: m_Name
       value: DentiPlayer_Big
       objectReference: {fileID: 0}
+    - target: {fileID: 6727144200524851027, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+      propertyPath: m_Height
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6822569888510293971, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+      propertyPath: field of view
+      value: 99.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7968929010446977073, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
       propertyPath: beInteracted
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8242813773534237612}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6523309190950257097, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
@@ -131,6 +197,17 @@ PrefabInstance:
       addedObject: {fileID: 8885564547983076009}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+--- !u!114 &1320909976145456480 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7968929010446977073, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}
+  m_PrefabInstance: {fileID: 8990172395102020945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b869da07b0a93984e85a490d2e76d72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8622169877646948013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 822922859292398588, guid: 5d928020d5b709d448dfed3a0c268604, type: 3}

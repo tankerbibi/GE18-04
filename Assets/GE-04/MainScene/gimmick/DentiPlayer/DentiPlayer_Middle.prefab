@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 7968929010446977073}
   - component: {fileID: 306558930679588524}
   - component: {fileID: 3145294687696114653}
-  - component: {fileID: 5045879497401834581}
   - component: {fileID: 6562064625867293352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DentiPlayer_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
-  movementSpeed: 10
+  movementSpeed: 5
 --- !u!114 &7968929010446977073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,13 +166,13 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5045879497401834581}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 7968929010446977073}
+        m_TargetAssemblyTypeName: DentiBhv, Assembly-CSharp
+        m_MethodName: ReversePlayDentiBhv
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -197,24 +196,15 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fe311860-8f3a-4c73-80fa-5512bb41f364
     m_ActionName: 'Player/Flip[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 50c853d5-2e47-4771-be3c-3d1bc5f662b0
+    m_ActionName: 'Player/CompleteF[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5045879497401834581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6235160554946844520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67220c679623dd94f8610d83e4487412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EUI: {fileID: 0}
 --- !u!54 &6562064625867293352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -254,13 +244,13 @@ GameObject:
   - component: {fileID: 6822569888510293971}
   - component: {fileID: 5088693207074311197}
   - component: {fileID: 7604275845466792539}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &952812128643235554
 Transform:
   m_ObjectHideFlags: 0
@@ -387,37 +377,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 822922859292398588}
     m_Modifications:
+    - target: {fileID: 2274985212793626977, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3471248113791543298, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
       propertyPath: m_Name
       value: NewModel_Middle
       objectReference: {fileID: 0}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+    - target: {fileID: 3471248113791543298, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+    - target: {fileID: 3784211643850270337, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
       propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7968929010446977073}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayDentiBhv
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DentiBhv, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799848296686496276, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
-      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 4221505368058198415, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5412270581215655699, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -459,9 +441,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6791061684142391128, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888094113855554770, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7610291134146311195, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625585493498889169, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916567909073726956, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4808157931750722685, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
