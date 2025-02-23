@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
-  movementSpeed: 20
+  movementSpeed: 10
 --- !u!114 &7968929010446977073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7264724881924481598}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -463,7 +463,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4808157931750722685, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+    - {fileID: 5424812064431918936, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+    - {fileID: 8188341254899467518, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+    - {fileID: 1217050391622998180, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
+    - {fileID: 1659949327652484898, guid: 5bc21dc3ce80fae45971031ef82f715c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

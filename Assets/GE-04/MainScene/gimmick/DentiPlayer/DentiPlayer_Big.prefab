@@ -52,10 +52,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewModel_Big
       objectReference: {fileID: 0}
-    - target: {fileID: 7985374031919838899, guid: 0ba635d2d3cd1e945be2c03aa229c5f5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
