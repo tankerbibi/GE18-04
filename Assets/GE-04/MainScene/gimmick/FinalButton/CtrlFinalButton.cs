@@ -13,6 +13,7 @@ public class CtrlFinalButton : MonoBehaviour
     [SerializeField] private float moveRate = 2.0f;
     [SerializeField] private float rotateRate = 4.0f;
     [SerializeField] private float fovChangeRate = 6.0f;
+    [SerializeField] private ChangeButtonMat changeButtonMat;
     private bool flg = false;
     private bool flg2 = false;
     private Camera pCamera;
@@ -25,13 +26,14 @@ public class CtrlFinalButton : MonoBehaviour
     }
     public void ActivateFinalButton()
     {
-        flg = true;
-        //if (ok1.DentiIn &&
-        //    ok2.DentiIn &&
-        //    ok3.DentiIn)
-        //{
-        //    flg = true;
-        //}
+        changeButtonMat.ChangeMaterial();
+
+        if (ok1.DentiIn &&
+            ok2.DentiIn &&
+            ok3.DentiIn)
+        {
+            flg = true;
+        }
     }
 
     public void Update()

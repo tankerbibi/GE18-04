@@ -8,11 +8,11 @@ public class CheckDentiIn : MonoBehaviour
     [SerializeField] private Material OnMaterial;
     [SerializeField] private SetMaterial setMaterialScript1;
     [SerializeField] private SetMaterial setMaterialScript2;
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Minus")
         {
+            DentiIn = true;
             minus = other;
             setMaterialScript1.ChangeMaterial(OnMaterial);
             setMaterialScript2.ChangeMaterial(OnMaterial);
@@ -22,6 +22,7 @@ public class CheckDentiIn : MonoBehaviour
     {
         if(other == minus)
         {
+            DentiIn = false;
             minus = null;
             setMaterialScript1.UndoMaterial();
             setMaterialScript2.UndoMaterial();
