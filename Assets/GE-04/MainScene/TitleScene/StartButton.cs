@@ -5,6 +5,6 @@ public class StartButton : MonoBehaviour
 {
     public void ChangeScene()
     {
-        SceneManager.LoadScene("MainScene2");
+        SceneManager.LoadScene("TutorialScene");
     }
 }
